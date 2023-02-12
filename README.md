@@ -4,7 +4,7 @@
 1. Node version 14+
 
 ## How to setup framework
-1. Clone repository - ```got clone git@github.com:JewD18/thinx-01.git```
+1. Clone repository - ```git clone git@github.com:JewD18/thinx-01.git```
 2. Install all dependencies - ```npm i```
 
 ## How to run test
