@@ -11,7 +11,6 @@
 Non-headless - ```npx cypress open```
 Headless - ```./node_modules/.bin.cypress run```
 
-
 To do:
 1. Ask devs to add unnique attributes for all actionable items(button, text fields, drop downs, etc +text that is on the page) 
 2. Create data oveer api or seed through db in order to avoid test collisionn (when test work with the same data, or user use same data)
