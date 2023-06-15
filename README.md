@@ -16,3 +16,5 @@ To do:
 2. Create data oveer api or seed through db in order to avoid test collisionn (when test work with the same data, or user use same data)
 
 Per best practices: All tests should be isolated
+
+Keep on Studying!!1
