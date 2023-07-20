@@ -1,5 +1,4 @@
-/// <reference types = "cypress" />
-
+import logoutPage from "../../../fixtures/pom/logout/logout.page";
 import Credentials from "../../../fixtures/data/credentials.json";
 
 describe("Login", () => {
@@ -8,10 +7,10 @@ describe("Login", () => {
   });
 
   it("Logout account", () => {
-    cy.contains("Sign In").click({ force: true });
-    cy.get('[name="email"]').eq(1).type(Credentials.email);
-    cy.get('[name="password"]').eq(0).type(Credentials.password);
-    cy.get('[type="submit"]').eq(1).click();
+    logoutPage.buttonSignIn.click({ force: true });
+    logoutPage.inputEmail.eq(1).type(Credentials.email);
+    logoutPage.inputPassword.eq(0).type(Credentials.password);
+    logoutPage.buttonSubmit.eq(1).click();
     cy.get('[class="Type__P-sc-k881ag-3 bGvSKN"]')
       .eq(0)
       .should("have.text", "Hi, Jewel")
