@@ -3,17 +3,19 @@
 import loginPage from '../../../fixtures/pom/login/login.page';
 import Credentials from '../../../fixtures/data/credentials.json';
 
+let  name = 'Jewel'
+
 describe('Login', () => {
   beforeEach(() => {
     cy.visit('/');
   });
 
-  it('Login existing account', () => {
+  it('Login existing user account', () => {
     loginPage.buttonSignIn.click({ force: true });
     loginPage.inputEmail.eq(1).type(Credentials.email);
     loginPage.inputPassword.eq(0).type(Credentials.password);
     loginPage.buttonSubmit.eq(1).click();
-    cy.contains('Hi, Jewel').should('be.visible');
+    cy.contains(`Hi, ${name}`).should('be.visible');
   });
 
   it('Should not be able to login without valid credentials', () => {
