@@ -11,6 +11,6 @@ describe('Shop', () => {
   //   cy.get('.StyleContainer-sc-1dgtedb-0').eq(0).click();
   //   cy.contains('sleep').click();
   //   cy.get('[name="collection"]').contains('Classic').click();
-  //   cy.get('.TextInput__Text-sc-1g1jqlv-0').contains('black').click();
+ 
   });
 });
